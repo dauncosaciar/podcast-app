@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "variables" as v;
 
 /** Media Queries **/
@@ -47,4 +48,12 @@
   display: grid;
   gap: $spacing;
   grid-template-columns: repeat($columns, 1fr);
+}
+
+@mixin bg-image($url, $color-gradient) {
+  background-image: linear-gradient($color-gradient 0%, $color-gradient 100%),
+    url($url);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
 }
