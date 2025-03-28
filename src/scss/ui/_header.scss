@@ -3,7 +3,7 @@
 
 /* Header */
 .site-header {
-  @include m.bg-image("../img/header.jpg", v.$secondary-opacity);
+  @include m.background-image("../img/header.jpg", v.$secondary-opacity);
   padding: 5rem 0;
 
   .logo {

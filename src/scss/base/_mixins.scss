@@ -50,12 +50,19 @@
   grid-template-columns: repeat($columns, 1fr);
 }
 
-@mixin bg-image($url, $gradient-color) {
+@mixin background-image($url, $gradient-color) {
   background-image: linear-gradient($gradient-color 0%, $gradient-color 100%),
     url($url);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+}
+
+@mixin background-icon($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-position: 50% 2rem;
+  background-size: 10rem;
 }
 
 @mixin heading-border($text-color, $line-color) {
