@@ -1,0 +1,9 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+/* Statistics */
+.statistics {
+  h2 {
+    @include m.heading-border(v.$secondary, v.$primary);
+  }
+}
