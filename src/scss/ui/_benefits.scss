@@ -1,0 +1,37 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+/* Benefits */
+.benefits {
+  background-color: v.$primary;
+
+  &-grid {
+    @include m.tablet {
+      @include m.grid(5, 4rem);
+      align-items: center;
+    }
+  }
+
+  &-content {
+    @include m.tablet {
+      grid-column: 1 / 4;
+    }
+
+    h2 {
+      @include m.heading-border(v.$secondary, v.$white);
+    }
+  }
+
+  .image {
+    transition-property: transform;
+    transition-duration: 300ms;
+
+    &:hover {
+      transform: rotate(8deg) scale(1.1);
+    }
+
+    @include m.tablet {
+      grid-column: 4 / 6;
+    }
+  }
+}
