@@ -11,7 +11,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "cssnano": "^7.0.6",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.0",
     "gulp-avif": "^1.0.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "^1.2.1",
