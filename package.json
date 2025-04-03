@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "gulp"
   },
-  "author": "Juan De la torre @codigoconjuan",
+  "author": "Daniel Alejandro Uncos Aciar",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.20",
